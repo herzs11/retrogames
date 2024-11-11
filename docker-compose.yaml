@@ -1,0 +1,10 @@
+services:
+  db:
+    image: doublewick/boxball:postgres-latest
+    ports:
+      - "5544:5432"
+    environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_DB: postgres
+    shm_size: 4gb
